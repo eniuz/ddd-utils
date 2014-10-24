@@ -9,7 +9,6 @@
 namespace Manticora\Common\Command;
 
 
-use MultiStuff\AdvertisementDomain\Application\UseCase\UseCase;
 
 class CommandHandler {
 
@@ -29,7 +28,7 @@ class CommandHandler {
         foreach ($useCases as $useCase) {
 
 
-            if ($useCase instanceof UseCase) {
+            if ($useCase instanceof UseCaseInterface) {
                 $this->useCases[join('', array_slice(explode('\\',get_class($useCase)), -1)).'Command'] = $useCase;
             } else {
                 throw new \LogicException('CommandHandler registerCommands expects an array of UseCase');
