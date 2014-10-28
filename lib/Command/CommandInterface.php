@@ -11,4 +11,5 @@ namespace Manticora\Common\Command;
 
 interface CommandInterface {
 
+
 } 
