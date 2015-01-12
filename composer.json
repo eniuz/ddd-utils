@@ -36,5 +36,5 @@
         "sensio/framework-extra-bundle":       "~3.0"
 
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
