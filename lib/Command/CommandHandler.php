@@ -77,6 +77,7 @@ class CommandHandler {
     {
         $commandClass =join('',array_slice(explode('\\',get_class($command)), -1));
 
+
         if (!array_key_exists($commandClass, $this->useCases)) {
             throw new \LogicException($commandClass . ' is not a managed command');
         }
