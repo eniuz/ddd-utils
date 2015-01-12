@@ -10,5 +10,5 @@ namespace Manticora\Common\Command;
 
 
 interface UseCaseInterface {
-
+    public function run($command);
 } 
